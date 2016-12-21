@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -9,8 +10,81 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="hangdroid.com.hangdroid.MainActivity">
 
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/hd_logo"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="HangDroid"
+        android:layout_alignTop="@+id/hd_logo"
+        android:layout_toRightOf="@+id/hd_logo"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Single Player"
+            android:layout_gravity="center"
+            android:background="#000000"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="100dp"
+            android:id="@+id/singlePlayerButton"
+            android:onClick="singlePlayerGame"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Multi Player"
+            android:background="#000000"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/multiPlayerButton"
+            android:onClick="multiPlayerGame"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Scores"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:paddingLeft="36dp"
+            android:paddingRight="36dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/scoresButton"
+            android:onClick="scoresGame"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HangDroid | Copyright 2017"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"/>
+
 </RelativeLayout>
