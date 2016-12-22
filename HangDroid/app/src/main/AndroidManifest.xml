@@ -16,9 +16,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:windowSoftInputMode="stateVisible|adjustResize"
-            android:name=".GameActivity">
-        </activity>
+            android:name=".GameActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <activity
+            android:name=".MultiGameActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <activity
+            android:name=".GameOverActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <activity
+            android:name=".MultiPlayerActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <activity android:name=".MultiGameOverActivity" />
+        <activity android:name=".ScoresActivity"></activity>
     </application>
 
 </manifest>

@@ -14,20 +14,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Method for Single Player Game
-    public void singlePlayerGame(View v){
+    public void startSinglePlayerGame(View v){
         Intent myIntent = new Intent(this,GameActivity.class);
         startActivity(myIntent);
     }
 
     //Method for Multi Player Game
-    public void multiPlayerGame(View v){
-        Intent myIntent = new Intent(this,MainActivity.class);
+    public void startMultiPlayerGame(View v){
+        Intent myIntent = new Intent(this,MultiPlayerActivity.class);
         startActivity(myIntent);
     }
 
     //Method for Scores Storage
-    public void scoresGame(View v){
-        Intent myIntent = new Intent(this,MainActivity.class);
+    public void startScoresActivity(View v){
+        Intent myIntent = new Intent(this,ScoresActivity.class);
         startActivity(myIntent);
     }
 }

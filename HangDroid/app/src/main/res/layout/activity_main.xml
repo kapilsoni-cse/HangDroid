@@ -16,7 +16,7 @@
         android:background="@drawable/ic_launcher"
         android:layout_alignParentTop="true"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="40dp"
         android:id="@+id/hd_logo"/>
 
     <TextView
@@ -50,7 +50,7 @@
             android:paddingRight="12dp"
             android:layout_marginTop="100dp"
             android:id="@+id/singlePlayerButton"
-            android:onClick="singlePlayerGame"/>
+            android:onClick="startSinglePlayerGame"/>
 
         <Button
             android:layout_width="150dp"
@@ -64,7 +64,7 @@
             android:paddingRight="15dp"
             android:layout_marginTop="10dp"
             android:id="@+id/multiPlayerButton"
-            android:onClick="multiPlayerGame"/>
+            android:onClick="startMultiPlayerGame"/>
 
         <Button
             android:layout_width="150dp"
@@ -76,7 +76,7 @@
             android:paddingRight="36dp"
             android:layout_marginTop="10dp"
             android:id="@+id/scoresButton"
-            android:onClick="scoresGame"/>
+            android:onClick="startScoresActivity"/>
     </LinearLayout>
 
     <TextView

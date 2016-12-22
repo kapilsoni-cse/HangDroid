@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">HangDroid</string>
+    <string name="letter_was">XXXX</string>
+    <string name="title_activity_multi_activity_game">MultiActivityGame</string>
+    <string name="title_activity_multi_game">MultiGameActivity</string>
+    <string name="multiPlayerHint">Hint : Enter a word in text field above and see if your friend guesses it correctly or not.</string>
 </resources>
